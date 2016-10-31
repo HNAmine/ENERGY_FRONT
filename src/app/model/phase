@@ -1,0 +1,8 @@
+export class Phase {
+    type: string;
+    idPhase: number;
+    idBoitier: number;
+    label: string;
+    description: string;
+    phaseZero: number;
+}

@@ -1,0 +1,27 @@
+<table class="table table-hover">
+    <thead>
+    <tr>
+        <th>#ID_PHASE</th>
+        <th>#ID_POITIER</th>
+        <th>Label</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th class="text-right">Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let phase of phases">
+        <td>{{phase.idPhase}}</td>
+        <td>{{phase.idBoitier}}</td>
+        <td>{{phase.label}}</td>
+        <td>{{phase.description}}</td>
+        <td><span class="badge" [ngClass]="{'style-success':phase.type == 'PM','style-info':phase.type == 'PT'}">{{phase.type}}</span>
+        </td>
+        <td class="text-right">
+            <button type="button" class="btn btn-icon-toggle"><i class="fa fa-pencil"></i></button>
+            <button type="button" class="btn btn-icon-toggle"><i class="fa fa-copy"></i></button>
+            <button type="button" class="btn btn-icon-toggle"><i class="fa fa-trash-o"></i></button>
+        </td>
+    </tr>
+    </tbody>
+</table>

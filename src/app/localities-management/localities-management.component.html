@@ -1,0 +1,18 @@
+<div class="card" style="margin: 10px;">
+    <div class="card-head">
+        <ul class="nav nav-tabs" data-toggle="tabs">
+            <li routerLink="phases" routerLinkActive="active"><a>PHASES</a>
+            </li>
+            <li routerLink="blocks" routerLinkActive="active"><a>BLOCKS</a></li>
+            <li routerLink="zones" routerLinkActive="active"><a>ZONES</a></li>
+            <li routerLink="localities" routerLinkActive="active"><a>LOCALITIES</a></li>
+        </ul>
+    </div>
+    <div class="card-body tab-content">
+        <div class="tab-pane active" id="first1">
+            <p>
+                <router-outlet></router-outlet>
+            </p>
+        </div>
+    </div>
+</div>
